@@ -94,6 +94,9 @@ img {
 
 .wrapper {
     margin: 1em;
+    max-width: calc(100vw - 2em);
+    width: calc(100vw - 2em);
+    overflow-x: hidden;
     background-color: ghostwhite;
     box-shadow: 5px 5px 15px var(--blurry);
 }
@@ -102,6 +105,7 @@ img {
 
 header {
     max-width: 100%;
+    overflow: hidden;
     background-color: var(--bg-color);
 }
 
@@ -166,6 +170,8 @@ header {
 }
 
 .body {
+    max-width: 100%;
+    overflow-x: hidden;
     padding: 3em 5em;
     color: var(--link-color);
     background-color: var(--bg-color);
@@ -915,4 +921,8 @@ header {
     }
 
     .jobs {
-        d
+        display: block;
+        margin-top: 2.5em;
+    }
+
+}
