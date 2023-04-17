@@ -70,6 +70,10 @@
     --detail-background-color: rgba(248, 248, 255, 0.575);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     max-width: 100vw;
     width: 100vw;
@@ -101,8 +105,6 @@ img {
     box-shadow: 5px 5px 15px var(--blurry);
 }
 
-
-
 header {
     max-width: 100%;
     overflow: hidden;
@@ -117,6 +119,10 @@ header {
     padding: 0 5em;
     align-items: center;
     justify-content: space-between;
+}
+
+.empty {
+    display: none;
 }
 
 .title {
@@ -364,7 +370,7 @@ header {
     padding: 0;
     border-radius: 5%;
     overflow: hidden;
-    background-color: grey;
+    background-color: transparent;
 }
 
 .full-me > div > img {
@@ -717,6 +723,24 @@ header {
     cursor: pointer;
 }
 
+
+footer {
+    height: 20vh;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+footer > div {
+    margin-top: 60%;
+    display: flex;
+    flex-direction: column;
+    bottom: 10%;
+}
+
+footer p {
+    font-size: 0.8em;
+}
 
 
 @media only screen and (max-width: 1024px) {
